@@ -21,7 +21,26 @@ These are the required dependencies for the root folder package json:
     "nodemon": "^2.0.7"
   }
 
-If you are using hte yarn package manager be sure to delete the package-lock.json (not the package.json, just the lockfile) and run yarn install in both the root and client folder.
+If you are using the yarn package manager be sure to delete the package-lock.json (not the package.json, just the lockfile) and run yarn install in both the root and client folder.
+
+The client folder includes the proxy url in the package.json. Be sure to update that if you change your Expresss server port number. The following dependencies will be installed in the client folder:
+
+
+	"proxy": "http://localhost:5000",
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.11.9",
+		"@testing-library/react": "^11.2.3",
+		"@testing-library/user-event": "^12.6.2",
+		"axios": "^0.21.1",
+		"history": "^5.0.0",
+		"node-sass": "^4.14.1",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "4.0.1",
+		"web-vitals": "^0.2.4"
+	},
+
 
 ### Initial Configuration
 Requirements: Node v12 or later, npm v6 or later.
