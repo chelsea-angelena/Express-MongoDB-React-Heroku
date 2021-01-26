@@ -19,7 +19,7 @@ These are the required dependencies for the root folder package json:
     "dotenv": "^8.2.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.7"
-  }
+  },
 
 If you are using the yarn package manager be sure to delete the package-lock.json (not the package.json, just the lockfile) and run yarn install in both the root and client folder.
 
@@ -56,7 +56,7 @@ Update the root folder package-json to include the following:
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node server.js",
 		"heroku-postbuild": "cd client && npm install && npm run build"
-  }
+  },
 
 ***Please note: Before trying to run the project locally you must set up a MongoDB database as well as a .env file with the following:
 
