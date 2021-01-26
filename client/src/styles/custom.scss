@@ -1,0 +1,11 @@
+//base
+@import './base/_font.scss';
+@import './base/_variables.scss';
+@import './base/_mixins.scss';
+//layout
+
+@import './layout/_header.scss';
+//pages
+@import './pages/_main.scss';
+
+@import './_global.scss';

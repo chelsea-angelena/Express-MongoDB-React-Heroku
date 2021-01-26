@@ -87,6 +87,23 @@ Setting up Heroku Env Vars:
 
 The project will not deploy unless you configure the same environment variables in your heroku app as you have set up in your .env file. You can do this either from the heroku project dashboard, or, using the heroku CLI. The variables you need to configure are:
 
+to set up with herok-cli:
+
+run: heroku congif:set (variable_name): (variable_value)
+
+to check the environment variables run heroku config:get
+
+to change from master to main branch:
+If you first create your remote with Githb you will already be on the main branch.
+
+If you first push to heroku you will be on the master branch.
+
+Just run:
+git checkout -b main
+git checkout -D master
+git push heroku main
+
+
 MONGO_DB_PASS: (password that you have set in your mongo DB cluster)
 MONGO_DB_USER: (the database username)
 MONGO_DB_DATABASE: (the name of the default database your app will be using)

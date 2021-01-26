@@ -1,0 +1,35 @@
+@mixin center($flex-direction){
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: $flex-direction;
+  flex-wrap: no-wrap;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  }
+  @mixin titleFont{
+    font-family: $font-main;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  @mixin label-font{
+    font-family: $font-main;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+}
+@mixin body-font{
+  font-family: $font-main;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: left;
+}
+@mixin body-font-center{
+  font-family: $font-main;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: center;
+}
